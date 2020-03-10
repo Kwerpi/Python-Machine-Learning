@@ -10,3 +10,11 @@ spam = [
     "Spam",
     "   Spam,    spam, spam,    spam, spam, eggs, and spam      ",
 ]
+
+def cleanup(input):
+    return input.strip().lower()
+
+for item in spam:
+    print(f"before : {item}")
+    item = cleanup(item)
+    print(f"after  : {item}")
